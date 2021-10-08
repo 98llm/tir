@@ -68,6 +68,7 @@ class Log:
         self.hash_exec = ""
         self.test_case = self.list_of_testcases()
         self.finish_testcase = []
+        self.failed_testcases = []
 
     def generate_header(self):
         """

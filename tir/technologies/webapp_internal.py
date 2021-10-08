@@ -5622,6 +5622,7 @@ class WebappInternal(Base):
         self.log.seconds = self.log.set_seconds(self.log.initial_time)
         self.log.testcase_seconds = self.log.set_seconds(self.log.testcase_initial_time)
         self.log.ct_method, self.log.ct_number = self.log.ident_test()
+        self.log.failed_testcases.append(stack_item)
 
         if self.config.new_log:
             self.execution_flow()
